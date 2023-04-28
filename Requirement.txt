@@ -1,0 +1,3 @@
+# before you run it, you must install this library into your envi
+
+Pip install request python-dotenv tqdm packaging
