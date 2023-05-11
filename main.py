@@ -17,17 +17,19 @@ class PythonOrg(unittest.TestCase):
     def test1_login(self):
         mainPage = test_login.MainPage(self.driver)
         mainPage.LoginApp()
+        print("Test Login Passed")
 
     def test2_searchContent(self):
         mainPage = test_login.MainPage(self.driver)
         mainPage.LoginApp()
         mainPage = test_search.MainPage(self.driver)
         mainPage.SearchContent()
+        print("test search Passed")
 
     def tearDown(self):
         self.driver.close()
         self.driver.quit()
-        print("Test Completed")
+        # print("Test Completed")
 
 if __name__ == "__main__":
     with open('report.html', 'w') as f:
