@@ -18,3 +18,7 @@ unittest module.
    When the test cases are run (on main.py or using terminal python3 main.py), a HTML report is generated using 
    the HTMLTestRunner package, which shows the status of each test case and any errors that occurred during the test. 
    The report.html file is generated in the same directory as the main.py script.
+
+
+Simple way to check this automation no need install python and the library, you just watch the recoded that i have been made:
+DemoKompas.mp4
