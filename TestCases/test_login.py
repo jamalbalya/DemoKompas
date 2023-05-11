@@ -17,7 +17,7 @@ class MainPage(BasePage):
         time.sleep(3)
 
         """
-        This method logs into the application using the username and password specified in the config.ini file.
+        This method logs into the application using the username and password specified in the credential.ini file.
         """
         config = configparser.ConfigParser()
         config.read('credential.ini')
