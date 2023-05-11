@@ -116,18 +116,18 @@ function html_escape(s) {
 <div class='heading'>
 <h1>Test Report</h1>
 <p class='attribute'><strong>Tester : </strong> QA</p>
-<p class='attribute'><strong>Start Time : </strong> 2023-04-28 15:34:27</p>
-<p class='attribute'><strong>Duration : </strong> 0:00:48.547353</p>
-<p class='attribute'><strong>Status : </strong> ALL 2 Pass 2, Passing rate: 100.00%</p>
+<p class='attribute'><strong>Start Time : </strong> 2023-05-11 07:47:13</p>
+<p class='attribute'><strong>Duration : </strong> 0:00:42.629607</p>
+<p class='attribute'><strong>Status : </strong> ALL 2 Pass 1 Error 1, Passing rate: 50.00%</p>
 
 <p class='description'>Test Report</p>
 </div>
 
 
 <p id='show_detail_line'>
-<a class="btn btn-primary" href='javascript:showCase(0)'>Summary{ 100.00% }</a>
+<a class="btn btn-primary" href='javascript:showCase(0)'>Summary{ 50.00% }</a>
 <a class="btn btn-danger" href='javascript:showCase(1)'>Failed{ 0 }</a>
-<a class="btn btn-success" href='javascript:showCase(2)'>Passed{ 2 }</a>
+<a class="btn btn-success" href='javascript:showCase(2)'>Passed{ 1 }</a>
 <a class="btn btn-info" href='javascript:showCase(3)'>ALL{ 2 }</a>
 </p>
 <table id='result_table' class="table table-condensed table-bordered table-hover">
@@ -148,12 +148,12 @@ function html_escape(s) {
     <td>View</td>
 </tr>
 
-<tr class='passClass warning'>
+<tr class='errorClass warning'>
     <td>PythonOrg</td>
     <td class="text-center">2</td>
-    <td class="text-center">2</td>
+    <td class="text-center">1</td>
     <td class="text-center">0</td>
-    <td class="text-center">0</td>
+    <td class="text-center">1</td>
     <td class="text-center"><a href="javascript:showClassDetail('c1',2)" class="detail" id='c1'>Detail</a></td>
 </tr>
 
@@ -176,18 +176,21 @@ pt1_1: Test Completed
     </td>
 </tr>
 
-<tr id='pt1_2' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test2_searchContent</div></td>
+<tr id='ft1_2' class='none'>
+    <td class='errorCase'><div class='testcase'>test2_searchContent</div></td>
     <td colspan='5' align='center'>
     <!--默认收起错误信息 -Findyou
-    <button id='btn_pt1_2' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_2'>pass</button>
-    <div id='div_pt1_2' class="collapse">  -->
+    <button id='btn_ft1_2' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_2'>error</button>
+    <div id='div_ft1_2' class="collapse">  -->
     <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_pt1_2' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt1_2'>pass</button>
-    <div id='div_pt1_2' class="collapse in">
+    <button id='btn_ft1_2' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_2'>error</button>
+    <div id='div_ft1_2' class="collapse in">
     <pre>
     
-pt1_2: Test Completed
+ft1_2: Traceback (most recent call last):
+  File "/Users/jemz/code/Automation/pythonProject/DemoKompas/main.py", line 25, in test2_searchContent
+    mainPage.SearchContent(1)
+TypeError: MainPage.SearchContent() takes 1 positional argument but 2 were given
 
 
     </pre>
@@ -198,10 +201,10 @@ pt1_2: Test Completed
 <tr id='total_row' class="text-center active">
     <td>Total</td>
     <td>2</td>
-    <td>2</td>
+    <td>1</td>
     <td>0</td>
-    <td>0</td>
-    <td>Passing rate: 100.00%</td>
+    <td>1</td>
+    <td>Passing rate: 50.00%</td>
 </tr>
 </table>
 

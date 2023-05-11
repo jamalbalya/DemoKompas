@@ -3,7 +3,7 @@ from selenium.webdriver.common.keys import Keys
 import time
 
 
-class BasePage(object):
+class BasePage:
     def __init__(self, driver):
         self.driver = driver
         driver.implicitly_wait(15)

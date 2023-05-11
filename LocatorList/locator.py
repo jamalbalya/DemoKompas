@@ -1,6 +1,6 @@
 from selenium.webdriver.common.by import By
 
-class MainPageLocators(object):
+class MainPageLocators:
     ICON_LOGIN = (By.ID, "sso__icon__login_top")
     LOGIN = (By.ID, "txt_signin")
     MEDIA_ID = (By.ID, "email")

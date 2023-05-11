@@ -2,7 +2,7 @@ from LocatorList.locator import *
 import time
 import configparser
 
-class BasePage(object):
+class BasePage:
     def __init__(self,driver):
         self.driver = driver
         driver.implicitly_wait(15)
